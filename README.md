@@ -1,3 +1,8 @@
+fine1k - Mykhail Myronov
+
+
+
+
 # MySQL-Windows-
 
 # 1.0
