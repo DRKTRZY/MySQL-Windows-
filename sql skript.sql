@@ -1,4 +1,5 @@
 -- Erstelle die Datenbank "frigg"
+DROP DATABASE IF EXISTS frigg;
 CREATE DATABASE frigg;
  
 -- Verwende die Datenbank "frigg" für alle folgenden Operationen
@@ -36,6 +37,18 @@ CREATE TABLE Data_Tag (
     FOREIGN KEY (Data_id) REFERENCES Data(id)
 );
  
+-- Erstelle die Tabelle "systemuser" für Benutzerinformationen
+CREATE TABLE systemuser (
+    uid INT PRIMARY KEY AUTO_INCREMENT, -- Eindeutige ID für den Benutzer
+    name VARCHAR(20) -- Name des Benutzers
+);
+ 
+-- Erstelle die Tabelle "usergroup" für Benutzergruppen
+CREATE TABLE usergroup (
+    gid INT PRIMARY KEY AUTO_INCREMENT, -- Eindeutige ID für die Benutzergruppe
+    groupname VARCHAR(50) -- Name der Benutzergruppe
+);
+
 -- Erstelle die Tabelle "Meta" für Metadaten
 CREATE TABLE Meta (
     id INT PRIMARY KEY AUTO_INCREMENT, -- Eindeutige ID für die Metadaten
@@ -49,16 +62,3 @@ CREATE TABLE Meta (
     FOREIGN KEY (Data_id) REFERENCES Data(id),
     FOREIGN KEY (systemuser_uid) REFERENCES systemuser(uid)
 );
- 
--- Erstelle die Tabelle "systemuser" für Benutzerinformationen
-CREATE TABLE systemuser (
-    uid INT PRIMARY KEY AUTO_INCREMENT, -- Eindeutige ID für den Benutzer
-    name VARCHAR(20) -- Name des Benutzers
-);
- 
--- Erstelle die Tabelle "usergroup" für Benutzergruppen
-CREATE TABLE usergroup (
-    gid INT PRIMARY KEY AUTO_INCREMENT, -- Eindeutige ID für die Benutzergruppe
-    groupname VARCHAR(50) -- Name der Benutzergruppe
-);
-
