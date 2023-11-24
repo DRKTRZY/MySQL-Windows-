@@ -19,4 +19,4 @@ Dann um die Datei in einer CSV Datei abzuspeichern diesen Befehl ausführen:
 Du kannst oben auch ein anderer Dateiname als import... nehmen.
 
 ## 1.2 MySQL Installation und konfigurieren
-Wir wollen auf dem Windows Server MySQL installieren und so konfigurieren das wir zugriff vom Client aus haben.
+Wir wollen auf dem Windows Server MySQL installieren und so konfigurieren das wir zugriff vom Client aus haben. Installiere MySQL-Server auf dem Winows-Server. Link: "https://dev.mysql.com/downloads/mysql/". Du kannst MySQL-Server nach Default installieren. Ich habe jedoch die Option ausgewählt das MySQL maximale Leistung des Servers darf benutzen, da ich vor habe MySQL Workbench auf dem Client zu installieren. Das spielt in unserem Fall keine grosse Rolle. Willst du dich mit dem Client auf den MySQL-Server verbinden dann musst du zu erst die richtigen Ports auf der Windows eigen Firewall öffnen. Link zum Tutorial: "https://www.netzwelt.de/anleitung/181406-windows-10-firewall-so-oeffnet-ports.html". Ich habe den Port: 3306 Geöffnet und noch andere wie z.B. ICMP um den Server pingen zu können. Wichtig ist auch ein Remote User zu erstellen!
