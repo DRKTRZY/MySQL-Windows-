@@ -1,10 +1,9 @@
 # das Team:
-fine1k - Mykhail Myronov
-DRKTRZY - Andrija Draca
-reaIhumanbean - Aleksandrs Rudzitis
-
-
-
+fine1k - Mykhail Myronov | 
+DRKTRZY - Andrija Draca | 
+reaIhumanbean - Aleksandrs Rudzitis | 
+Baj140316 - Besfort Ajeti | 
+k4d1rd - Kadir Dikbas | 
 
 # MySQL-Windows-
 
