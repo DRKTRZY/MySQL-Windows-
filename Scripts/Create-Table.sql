@@ -52,7 +52,7 @@ CREATE TABLE usergroup (
 -- Erstelle die Tabelle "Meta" für Metadaten
 CREATE TABLE Meta (
     id INT PRIMARY KEY AUTO_INCREMENT, -- Eindeutige ID für die Metadaten
-    path VARCHAR(50), -- Pfad zu den Daten
+    path VARCHAR(500), -- Pfad zu den Daten
     permission INT, -- Berechtigungen für die Daten
     time INT, -- Zeitstempel für die Metadaten
     usergroup_gid INT, -- Fremdschlüssel, der auf die Tabelle "usergroup" verweist
