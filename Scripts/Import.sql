@@ -14,3 +14,5 @@ select distinct digest, size, compression, "data", (select ID from frigg.type wh
 
 Insert into frigg.meta(path, time, usergroup_gid, Data_id, systemuser_uid)
 select distinct path, time, gid,(Select ID from frigg.data where "frigg.data(content)" = "temp.data"), uid from temp;
+
+Drop table frigg.temp;
