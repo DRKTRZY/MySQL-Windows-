@@ -39,18 +39,17 @@ Danach muss man einfach den Pfad zu der zuvor erstellten Initaldaten hinterlegen
 
 ![grafik](https://github.com/DRKTRZY/MySQL-Windows-/assets/116079624/e303a2b0-ed50-4d32-aa1b-ba557da50a27)
 
-2.0 Webserver
-2.1 Routing
+# 2.0 Webserver
+## 2.1 Routing
 Zu aller erst konfigurieren wir die YAML-File von dem Webserver:
-<img width="487" alt="image" src="https://github.com/DRKTRZY/MySQL-Windows-/assets/94437473/cde0fe8c-facc-4826-930a-2d449f0d3708">
-
+<br> <img width="487" alt="image" src="https://github.com/DRKTRZY/MySQL-Windows-/assets/94437473/cde0fe8c-facc-4826-930a-2d449f0d3708"> <br>
 Dann installieren wir das Paket "gdebi" oben bei der Initialdaten Erstellung ist erklärt mit welchem Command. Dann vom Filestash die "gna_0.7_all.deb" und die dazugehörige Config-File installieren und auf den Web-Server packen mit z.B. WINSCP oder FileZilla. Dann diesen Command ausführen: 
 sudo gdebi gna_0.7_all.deb
 Dann noch die Config-File vom Filestash in das richtige Verzeichnis legen. Mit den Commands:
 <br>```rm /etc/gna.conf.yaml``` <br>
 <br>```mv gna.conf.yaml /etc```<br>
 
-2.2 GNA Config Konfigurieren
+## 2.2 GNA Config Konfigurieren
 Die Verbindungsangaben um sich mit der Datenbank zu verbinden:
 <img width="699" alt="image" src="https://github.com/DRKTRZY/MySQL-Windows-/assets/94437473/43fbad32-3271-446a-8a9f-01dca459704a">
 
@@ -59,7 +58,7 @@ GNA Benötigt noch den passenden Treiber in unserem Fall für MySQL. Commands:
 Falls es mit apt install nicht klappt den unteren Command benutzen:
 <br>```sudo cpan install DBD::mysql``` <br>
 
-2.3 Firewall konfigurieren
+## 2.3 Firewall konfigurieren
 Vom Client aus kann man mit der IP und Port auf die Firewall per Web-GUI zugreifen: 
 <br>```192.168.210.1:444```<br>
 Login für die Firewall ist: ***admin*** PW: ***sml12345***
