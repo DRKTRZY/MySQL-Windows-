@@ -30,3 +30,12 @@ Wir wollen auf dem Windows Server MySQL installieren und so konfigurieren das wi
 <img width="500" alt="image" src="https://github.com/DRKTRZY/MySQL-Windows-/assets/94437473/6c4036d5-6739-4c42-a384-ddab0dc890ee"> <br>
 Hier kann man sehen das ich mich vom Client auf den MySQL-Server verbinde. Mit der Workbench auf dem Client.
 
+## 1.3 Temmporäre Tabelle mit Initaldaten erstellen
+Der einfachste Weg ist es auf MySQL Workbench sich mit dem Datenbank Server zu verbinden und dann unter Schemas einen Rechtsclick auf Tables zu machen und dann auf "Table Data Import Wizard" zu klicken.
+![grafik](https://github.com/DRKTRZY/MySQL-Windows-/assets/116079624/6bc456d0-da8a-4d24-86a8-a13add3678fe)
+Danach muss man einfach den Pfad zu der zuvor erstellten Initaldaten hinterlegen und die ganze Zeit auf "Next" klicken bis die Tabelle erstellt ist.
+![grafik](https://github.com/DRKTRZY/MySQL-Windows-/assets/116079624/e303a2b0-ed50-4d32-aa1b-ba557da50a27)
+
+
+
+ 
