@@ -70,19 +70,22 @@ Dann auf de Client per Browser auf die IP-Adresse: 192.168.220.25:3000
 
 # 3.0 Monitoring
 ## 3.1 PRTG installieren und konfigurieren
-Installation durch PRTG Download : https://www.paessler.com/de/download/prtg-download?download=1
+Installation von PRTG Core und optional PRTG Remote (Fernzugriff) Download: https://www.paessler.com/de/download/prtg-download?download=1
+
+## 3.2 Konfiguration
 Standard-Anmeldedaten:
 Benutzer und Passwort: prtgadmin
-Installation von PRTG Core und optional PRTG Remote auf anderem Computer für Fernzugriff
 ![image](https://github.com/DRKTRZY/MySQL-Windows-/assets/151912781/13433347-34c2-4fd4-b9f3-a617755ca1ad)
-Standard Konfiguration für Sicherheit und Funktionen von PRTG Core
+Ist die Standard Konfiguration für Sicherheit und Funktionen von PRTG Core
 Unter Konfiguration > Mein Konto (Übersicht zu Konto erscheint)
-![image](https://github.com/DRKTRZY/MySQL-Windows-/assets/151912781/ca909b49-958f-4265-98ce-27fb46d8d9dc)
 Anmeldename prtgadmin auf prtgadmin01 aktualisieren
 Standardpasswort prtgadmin auf Welcome$21 aktualisieren
-
+![image](https://github.com/DRKTRZY/MySQL-Windows-/assets/151912781/ca909b49-958f-4265-98ce-27fb46d8d9dc)
 Sicherheitseinstellungen vornehmen unter Konfiguration > Web-Interface (Für sicheren Fern-/Zugriff)
-https://www.paessler.com/de/download/prtg-download?download=1
+![image](https://github.com/DRKTRZY/MySQL-Windows-/assets/151912781/82009410-1c03-46b0-9321-f292809f1131)
+Fernzugriff zulassen unter Konfiguration > Server & Probes
+![image](https://github.com/DRKTRZY/MySQL-Windows-/assets/151912781/07214c6a-fcf1-4267-838c-df2c5e3c4c2d)
+
 
 
 
