@@ -68,6 +68,22 @@ Dann sollte die Konfiguration auch schon fertig sein für die Firewall. Dann nur
 gna
 Dann auf de Client per Browser auf die IP-Adresse: 192.168.220.25:3000
 
+# 3.0 Monitoring
+## 3.1 PRTG installieren und konfigurieren
+Installation durch PRTG Download : https://www.paessler.com/de/download/prtg-download?download=1
+Standard-Anmeldedaten:
+Benutzer und Passwort: prtgadmin
+Installation von PRTG Core und optional PRTG Remote auf anderem Computer für Fernzugriff
+![image](https://github.com/DRKTRZY/MySQL-Windows-/assets/151912781/13433347-34c2-4fd4-b9f3-a617755ca1ad)
+Standard Konfiguration für Sicherheit und Funktionen von PRTG Core
+Unter Konfiguration > Mein Konto (Übersicht zu Konto erscheint)
+![image](https://github.com/DRKTRZY/MySQL-Windows-/assets/151912781/ca909b49-958f-4265-98ce-27fb46d8d9dc)
+Anmeldename prtgadmin auf prtgadmin01 aktualisieren
+Standardpasswort prtgadmin auf Welcome$21 aktualisieren
+
+Sicherheitseinstellungen vornehmen unter Konfiguration > Web-Interface (Für sicheren Fern-/Zugriff)
+https://www.paessler.com/de/download/prtg-download?download=1
+
 
 
 
