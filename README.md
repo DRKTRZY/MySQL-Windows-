@@ -92,7 +92,7 @@ Unter Geräte auf Windows > Server > vmWS1 (MySQL Server)
 ![image](https://github.com/DRKTRZY/MySQL-Windows-/assets/151912781/0c5c7db8-7a19-4400-9896-bfb9c44cc7cf)
 Sensor hinzufügen (Ping/HTTP Standardmässig vorinstalliert, falls nicht noch installieren)
 ![image](https://github.com/DRKTRZY/MySQL-Windows-/assets/151912781/c68eb425-372d-4703-b438-b0b0ab31419b)
-Einstellungen des Sensors:
+Einstellungen des Sensors und "Erstellen" drücken
 ![image](https://github.com/DRKTRZY/MySQL-Windows-/assets/151912781/68a2b8ea-7494-42c8-a67c-44284b19884e)
 Einstellungen für Sensor ✓
 
