@@ -17,7 +17,7 @@ CREATE TABLE Data (
     digest CHAR(100), -- Digest-Wert für die Daten
     size INT, -- Größe der Daten
     compression INT, -- Art der Datenkompression
-    content VARCHAR(500), -- Inhalt der Daten
+    content Text(50000), -- Inhalt der Daten
     type_id INT, -- Fremdschlüssel, der auf die Tabelle "Type" verweist
     FOREIGN KEY (type_id) REFERENCES Type(id)
 );
