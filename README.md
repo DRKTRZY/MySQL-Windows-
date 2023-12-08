@@ -69,10 +69,10 @@ gna
 Dann auf de Client per Browser auf die IP-Adresse: 192.168.220.25:3000
 
 # 3.0 Monitoring
-## 3.1 PRTG installieren und konfigurieren
+## 3.1 PRTG installieren
 Installation von PRTG Core und optional PRTG Remote (Fernzugriff) Download: https://www.paessler.com/de/download/prtg-download?download=1
 
-## 3.2 Konfiguration
+## 3.2 Grund-Konfiguration
 Standard-Anmeldedaten:
 Benutzer und Passwort: prtgadmin
 ![image](https://github.com/DRKTRZY/MySQL-Windows-/assets/151912781/13433347-34c2-4fd4-b9f3-a617755ca1ad)
@@ -85,7 +85,16 @@ Sicherheitseinstellungen vornehmen unter Konfiguration > Web-Interface (Für sic
 ![image](https://github.com/DRKTRZY/MySQL-Windows-/assets/151912781/82009410-1c03-46b0-9321-f292809f1131)
 Fernzugriff zulassen unter Konfiguration > Server & Probes
 ![image](https://github.com/DRKTRZY/MySQL-Windows-/assets/151912781/07214c6a-fcf1-4267-838c-df2c5e3c4c2d)
+Grundeinstellungen ✓
 
+## 3.3 Monitoring für MySQL Server einrichten:
+Unter Geräte auf Windows > Server > vmWS1 (MySQL Server)
+![image](https://github.com/DRKTRZY/MySQL-Windows-/assets/151912781/0c5c7db8-7a19-4400-9896-bfb9c44cc7cf)
+Sensor hinzufügen (Ping/HTTP Standardmässig vorinstalliert, falls nicht noch installieren)
+![image](https://github.com/DRKTRZY/MySQL-Windows-/assets/151912781/c68eb425-372d-4703-b438-b0b0ab31419b)
+Einstellungen des Sensors:
+![image](https://github.com/DRKTRZY/MySQL-Windows-/assets/151912781/68a2b8ea-7494-42c8-a67c-44284b19884e)
+Einstellungen für Sensor ✓
 
 
 
