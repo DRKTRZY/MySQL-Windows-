@@ -13,7 +13,7 @@ create table temp (
     uid int not null,
     user varchar(50) not null,
     gid int not null,
-    `group` varchar(50) not null,
+    `groupname` varchar(50) not null,
     time int not null,
     compression int not null,
     data text not null
@@ -58,7 +58,7 @@ create table usergroup (
 create table meta (
     id int not null auto_increment primary key,
     path varchar(250) not null,
-    perm int not null,
+    permission int not null,
     time int not null,
     systemuser_uid int,
     usergroup_gid int,
