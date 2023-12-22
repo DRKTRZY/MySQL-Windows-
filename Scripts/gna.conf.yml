@@ -60,24 +60,25 @@ browse:
 # SQL-Queries für die Daten-Seite /data
 data:
   # Select String: Attribut «content» mit binded Parameter «digest»
-  sql_content_bind: "select content from Data where digest = ?;"
+  sql_content_bind: "select content from view where digest = ?;"
   # Select String: Attribut «path» mit binded Parameter «digest»
-  sql_contentpaths_bind: "select meta.path from meta where meta.digest = ?"
+  sql_contentpaths_bind: "select metapath from view where digest = ?;"
   # Insert String: binded Parameter für Attribut «Tag.name»,
   # bereits vorhandene Namen sollen ignoriert werden (keine doppelte Ablage)
-  sql_tag_insert_unique_bind: 'select 1 from Data where Data.digest = ?;'
+  sql_tag_insert_unique_bind: 'INSERT IGNORE INTO tag (name) VALUES (?);'
   # Insert Nummern: FKs für «Data» und «Tag» in Tabelle «DataTag» einfügen,
   # mit binden Parameter «Data.id» und «Tag.name»
-  sql_datatag_insert_unique_bind: 'select 1 from Data where digest = ? and type = ?;'
+  sql_datatag_insert_unique_bind: 'INSERT IGNORE INTO data_digest (data_digest, tag_id) VALUES (?, (SELECT id FROM tag WHERE name = ?));'
   # Select String: Tag anzeigen, mit binden Parameter «Data.id/digest»
-  sql_tag_for_digest_bind: "select 'tagname' from DataTag where DataTag.data = ? or 1=1 limit 2"
+  sql_tag_for_digest_bind: "SELECT name FROM data_tag JOIN tag ON data_tag.tag_id = tag.id WHERE data_tag.data_digest = ? LIMIT 2;"
 # SQL-Query für Anzeige Dateiinhalt auf der Seite /raw
 raw:
   # Select String: Dateityp anhand von binded Parameter «digest» auswählen
   # (nicht im GUI sichtbar, für HTTP-Content-Type)
-  sql_contenttype_bind: "select 'text/plain' from Data where digest = ? limit 1"
+  sql_contenttype_bind: "SELECT type FROM view WHERE digest = ? LIMIT 1;"
 tags:
   # Select String: Anzeige aller gesetzten Tags
-  sql_tags_all_ordered: "select 'tagname';"
+  sql_tags_all_ordered: "select name from tag ORDER BY name;"
   # Select String: Anzeige aller Dateipfade für ein Tag
-  sql_metapaths_for_tag_bind: "select 'path' from Tag where name = ?;"
+  sql_metapaths_for_tag_bind: "select path from data_tag JOIN meta ON data_tag.data_digest = meta.data_digest WHERE data_tag.tag_id = (SELECT id FROM tag WHERE name = ?);"
+.
