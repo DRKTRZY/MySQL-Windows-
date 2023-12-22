@@ -81,4 +81,3 @@ tags:
   sql_tags_all_ordered: "select name from tag ORDER BY name;"
   # Select String: Anzeige aller Dateipfade für ein Tag
   sql_metapaths_for_tag_bind: "select path from data_tag JOIN meta ON data_tag.data_digest = meta.data_digest WHERE data_tag.tag_id = (SELECT id FROM tag WHERE name = ?);"
-.
