@@ -1,3 +1,5 @@
+use frigg;
+Create or Replace View frigg.view as
 select
 data.digest,
 data.content,
