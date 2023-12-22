@@ -56,27 +56,7 @@ overview:
 # SQL-Query für die «Browse» Seite /browse
 browse:
   # Select digest, path, size, type, perm, usr, grp, time, compression mit binded Parameter path und limit
-  sql_browseview_bind: "use frigg;
-select
-data.digest,
-data.content,
-data.size as datasize,
-data.compression as datacompression,
-type.name as typename,
-tag.name as tagname,
-usergroup.`groupname` as usergroupname,
-systemuser.user as systemusername,
-meta.path as metapath,
-meta.permission as metaperm,
-meta.time as metatime
-from data
-left join type on data.type_id = type.id
-left join data_tag on data.digest = data_tag.data_digest
-left join tag on data_tag.tag_id = tag.id
-left join meta on data.digest = meta.data_digest
-left join usergroup on meta.usergroup_gid = usergroup.gid
-left join systemuser on meta.systemuser_uid = systemuser.uid
-where path like ? limit ?;"
+  sql_browseview_bind: "select digest, path, size, type, perm, uid, gid, time, compression from data_overview where path like ? limit ?;
 # SQL-Queries für die Daten-Seite /data
 data:
   # Select String: Attribut «content» mit binded Parameter «digest»
