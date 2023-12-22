@@ -1,4 +1,3 @@
-use frigg;
 select
 data.digest,
 data.content,
